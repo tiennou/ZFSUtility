@@ -192,7 +192,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/libzfs;
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/Kernel.framework/Versions/A/Headers,
+					External/spl/include,
+					External/zfs/include,
+				);
 				INFOPLIST_FILE = ZFS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -224,7 +228,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = /usr/local/include/libzfs;
+				HEADER_SEARCH_PATHS = (
+					/System/Library/Frameworks/Kernel.framework/Versions/A/Headers,
+					External/spl/include,
+					External/zfs/include,
+				);
 				INFOPLIST_FILE = ZFS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
