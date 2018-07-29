@@ -193,14 +193,17 @@
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
-					/System/Library/Frameworks/Kernel.framework/Versions/A/Headers,
-					External/spl/include,
+					External/zfs/lib/libspl/include,
 					External/zfs/include,
 				);
 				INFOPLIST_FILE = ZFS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lzfs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.openzfsonosx.ZFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -229,14 +232,17 @@
 				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
-					/System/Library/Frameworks/Kernel.framework/Versions/A/Headers,
-					External/spl/include,
+					External/zfs/lib/libspl/include,
 					External/zfs/include,
 				);
 				INFOPLIST_FILE = ZFS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lzfs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.openzfsonosx.ZFS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

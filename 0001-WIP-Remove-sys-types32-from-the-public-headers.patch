@@ -1,0 +1,25 @@
+From f3794e44d815c6fa78112a1bdcbf42751569696f Mon Sep 17 00:00:00 2001
+From: Etienne Samson <samson.etienne@gmail.com>
+Date: Sun, 29 Jul 2018 10:50:25 +0200
+Subject: [PATCH] WIP: Remove sys/types32 from the public headers
+
+---
+ lib/libspl/include/sys/types.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lib/libspl/include/sys/types.h b/lib/libspl/include/sys/types.h
+index c50659129..b18739e51 100644
+--- a/lib/libspl/include/sys/types.h
++++ b/lib/libspl/include/sys/types.h
+@@ -31,7 +31,7 @@
+ #include <sys/feature_tests.h>
+ #include_next <sys/types.h>
+ #include <sys/param.h> /* for NBBY */
+-#include <sys/types32.h>
++//#include <sys/types32.h>
+ #include <sys/va_list.h>
+ 
+ #ifndef HAVE_INTTYPES
+-- 
+2.17.0
+

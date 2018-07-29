@@ -6,14 +6,17 @@
 //  Copyright © 2018 Etienne Samson. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
-
-//#include "External/spl/spl_config.h"
-//#include "External/zfs/zfs_config.h"
-
-//#include <stdarg.h>
-//#include <sys/types.h>
+#import <Foundation/Foundation.h>
 
 #include <libzfs.h>
 
-///System/Library/Frameworks/Kernel.framework/Versions/A/Headers External/spl/include External/zfs/include
+static libzfs_handle_t *handle;
+
+int main(int argc, char **argv)
+{
+	handle = libzfs_init();
+
+
+	libzfs_fini(handle);
+}
+
