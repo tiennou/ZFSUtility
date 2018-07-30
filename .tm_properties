@@ -1,0 +1,4 @@
+zfsExclude={*.in,*.oa,*.lo,*.la,*.Po,*.Plo,**/Makefile*,*.sh,*.cfg,*.shlib,*.kshlib,*.ksh,*/tests}
+excludeFiles={$excludeFiles,$zfsExclude}
+excludeInFileChooser={$excludeInFileChooser,$zfsExclude}
+

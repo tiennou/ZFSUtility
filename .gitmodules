@@ -1,0 +1,6 @@
+[submodule "External/spl"]
+	path = External/spl
+	url = git://github.com/openzfsonosx/spl.git
+[submodule "External/zfs"]
+	path = External/zfs
+	url = git://github.com/openzfsonosx/zfs.git
